@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.lenovo.myreminder">
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/iconspaymenthistory"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/iconspaymenthistory"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Login" />
+        <activity android:name=".Signin" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Records" />
+
+        <receiver android:name=".Broadcast">
+            <intent-filter>
+                <action android:name="your.intent" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".Services.ReminderService" />
+        <service android:name=".Services.LoanService" />
+
+        <activity android:name=".DailyActivity" />
+        <activity android:name=".LoanRecords" />
+        <activity android:name=".IncomeRecord" />
+        <activity android:name=".ReturndateActivity" />
+
+        <receiver android:name=".alarm_manager.DailyAlarm">
+            <intent-filter>
+                <action android:name="com.example.lenovo.myalarmmanager" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".UserInfoActivity"></activity>
+    </application>
+
+</manifest>
