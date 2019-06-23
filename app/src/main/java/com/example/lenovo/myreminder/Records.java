@@ -319,16 +319,12 @@ public class Records extends AppCompatActivity {
             preferences.apply();
 
             ArrayList<RecordModel> filteredList = db.byDate(abc);
-            //clear previous list and add new list to it then call notifydatasetchanged
 
             arrayList.clear();
             total.setText("Total: " + String.valueOf(db.totalsumofDate(abc)));
 
             arrayList.addAll(filteredList);
             adapter.notifyDataSetChanged();
-
-
-            //
 
         }
     };

@@ -70,7 +70,7 @@ Context context;
                 if (currentTimeToBeMatched.equals(toBeMatchedTime)) {
 
                     for (LoanModel loan : arrayList) {
-                    Log.e("LoanId", loan.getLoan_id());
+        //            Log.e("LoanId", loan.getLoan_id());
                     Log.e("LoanDate", loan.getReturnDate());
                         newNotification(loan);
                 }

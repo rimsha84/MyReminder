@@ -67,7 +67,7 @@
             <EditText
                 android:id="@+id/inputnameperson"
                 android:layout_width="300dp"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:hint="Name"
                 android:layout_marginTop="3dp"
@@ -89,7 +89,7 @@
             <EditText
                 android:id="@+id/inputamount"
                 android:layout_width="300dp"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:layout_gravity="center"
                 android:textSize="18sp"
                 android:hint="Amount"
@@ -111,14 +111,13 @@
             <EditText
                 android:id="@+id/inputtype"
                 android:layout_width="300dp"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:layout_gravity="center_horizontal"
                 android:hint="(lend / borrow)"
                 android:inputType="textCapWords"
                 android:focusableInTouchMode="false"
                 android:layout_marginTop="17dp"
                 android:textColor="@android:color/black"
-                android:padding="5dp"
                 android:textSize="17sp" />
 
         </android.support.design.widget.TextInputLayout>
@@ -134,11 +133,9 @@
             <EditText
                 android:id="@+id/inputdate"
                 android:layout_width="300dp"
-                android:layout_height="wrap_content"
+                android:layout_height="50dp"
                 android:layout_gravity="center_horizontal"
-                android:gravity="center"
                 android:layout_marginTop="6dp"
-                android:padding="5dp"
                 android:focusableInTouchMode="false"
                 android:hint="Click here to select return date"
                 android:textColor="@android:color/black"
@@ -171,15 +168,17 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_margin="5dp"
+            android:textAllCaps="false"
             android:gravity="center"
             android:background="@drawable/buttonshape"
-            android:text="add" />
+            android:text="Add" />
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_margin="5dp"
             android:background="@drawable/buttonshape"
+            android:textAllCaps="false"
             android:text="Records"
             android:id="@+id/button3"
             />

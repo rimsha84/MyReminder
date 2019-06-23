@@ -111,11 +111,11 @@ public class IncomeFragment extends Fragment {
                                 Intent intent=new Intent(getActivity() ,Login.class);
                                 preferences.clear();
                                 startActivity(intent);
-                                Intent intent1= new Intent(getActivity(),ReminderService.class);
-                                getActivity().stopService(intent1);
-
-                                Intent intent2= new Intent(getActivity(),LoanService.class);
-                                getActivity().stopService(intent2);
+//                                Intent intent1= new Intent(getActivity(),ReminderService.class);
+//                                getActivity().stopService(intent1);
+//
+//                                Intent intent2= new Intent(getActivity(),LoanService.class);
+//                                getActivity().stopService(intent2);
                             }
                         })
                         .setNegativeButton("No", new DialogInterface.OnClickListener() {

@@ -42,6 +42,11 @@
                 <action android:name="com.example.lenovo.myalarmmanager" />
             </intent-filter>
         </receiver>
+  <receiver android:name=".alarm_manager.LoanAlarm">
+            <intent-filter>
+                <action android:name="com.example.lenovo.myalarmmanager" />
+            </intent-filter>
+        </receiver>
 
         <activity android:name=".UserInfoActivity"></activity>
     </application>

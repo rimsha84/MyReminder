@@ -51,7 +51,7 @@ public class Signin extends AppCompatActivity {
         signnumber= findViewById(R.id.number);
         signin=findViewById(R.id.buttonsignin);
 
-        String regexPassword = "(?=.*[a-z])(?=.*[\\d]).{6,}";
+        String regexPassword = "(?=.*[a-z])(?=.*[\\d]).{5,}";
 
         awesomeValidation.addValidation(Signin.this,R.id.name,"[a-zA-Z\\s]+",R.string.name);
         awesomeValidation.addValidation(Signin.this,R.id.myemail,android.util.Patterns.EMAIL_ADDRESS,R.string.email);
@@ -85,14 +85,6 @@ public class Signin extends AppCompatActivity {
                     Intent sign = new Intent(Signin.this,UserInfoActivity.class);
                     startActivity(sign);
 
-//                    Intent intent1= new Intent(Signin.this,ReminderService.class);
-//
-//                    startService(intent1);
-
-                    Intent intent2= new Intent(Signin.this,LoanService.class);
-                    intent2.setAction("com.testApp.service.MY_SERVICE");
-
-                    startService(intent2);
 
                     finish();
 

@@ -83,14 +83,6 @@ public class Login extends AppCompatActivity {
                     preferences.putString("Password",logpassword);
                     preferences.apply();
 
-//                    Intent intent1= new Intent(Login.this,ReminderService.class);
-//                    intent1.setAction("com.testApp.service.MY_SERVICE");
-//                     startService(intent1);
-
-                    Intent intent2= new Intent(Login.this,LoanService.class);
-                    intent2.setAction("com.testApp.service.MY_SERVICE");
-
-                    startService(intent2);
 
                     finish();
                 } else {
